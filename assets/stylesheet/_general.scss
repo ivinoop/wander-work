@@ -68,10 +68,15 @@ body {
     flex: 0 1 60%;
 }
 
+.flex-50 {
+    flex: 0 1 50%;
+}
+
 // General Styles
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .text-center {
@@ -94,3 +99,29 @@ a {
     font-size: 0;
 }
 
+.btn {
+    display: inline;
+    cursor: pointer;
+    &-primary {
+        background-color: $btnColor;
+        color: $textWhite;
+        padding: .8rem;
+        border-radius: .4rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid $btnColor;
+            background-color: transparent;
+            color: $btnColor;
+        }
+    }
+
+    &-secondary {
+        background-color: $textWhite;
+        
+        font-weight: 600;
+        padding: .5rem;
+        border-radius: .4rem;
+    }
+}

@@ -31,6 +31,11 @@
         font-size: .7rem;
         font-weight: 500;
         color: black;
+        
+        &:hover {
+            background-color: $btnColor;
+            color: $textWhite;
+        }
     }
     .connectivity {
         // background-color: navy;
@@ -51,6 +56,7 @@
     
     .place-details {
         justify-self: center;
+        text-align: center;
         h3 {
             font-weight: 700;
             font-size: 1.5rem;
@@ -110,34 +116,173 @@
         }
     }
 
-    &:hover .footer {
-        display: none;
+    // &:hover .footer {
+    //     display: none;
+    // }
+
+    // &:hover .place-details {
+    //     display: none;
+    // }
+
+    // &:hover header {
+    //     display: none;
+    // }
+
+    
+    
+}
+
+
+
+.popUpContainer {
+    position: fixed;
+    top: 2rem;
+    
+     left: 3rem;
+     right: 3rem;
+    width: 90%;
+    border-radius: .5rem;
+    background-color: $textWhite;
+    
+    // background-color:$textWhite;
+    margin: 0 auto;
+    z-index: 100;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .5);
+    
+    header {
+        height: 220px;
+        text-align: center;
+        padding: 1rem;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        
+        position: relative;
+        h2 {
+            font-size: 3rem;
+            color: $textWhite;
+            font-weight: 700;
+        }
+
+        h5 {
+            font-size: 1.1rem;
+            color: $textWhite;
+            margin-bottom: 1.8rem;
+        }
+
+        .headerBottom {
+            margin-top: 1.5rem;
+            color: rgb(230, 225, 225);
+
+            font-size: .8rem;
+
+            span {
+                cursor: pointer;
+                i {
+                    margin: 0 .3rem;
+                    cursor: default;
+                }
+            }
+
+        }
+
+        .closeBtn {
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            font-size: .8rem;
+        }
     }
 
-    &:hover .place-details {
-        display: none;
+    .data-container {
+        
+       
+
+        header {
+            // background-color: red;
+            height: 3rem;
+            border-bottom: 1px solid lightgray;
+            a {
+                font-weight: 600;
+                display: inline-block;
+                padding-bottom: 2rem;
+                
+                &:hover {
+                    border-bottom: 2px solid red;
+                }
+                & .active {
+                    border-bottom: 2px solid red;
+                }
+            }
+        }
+
+        .dataBody {
+            padding: 1rem;
+
+            .boxOne {
+                margin-right: 1.5rem;
+                border-right: 1px solid lightgray;
+                padding-right: 1.5rem;
+            }
+            
+            .row {
+                margin: .5rem 0;
+            }
+            
+            h6 {
+                font-weight: 600;
+
+                span {
+                    margin-right: .5rem;
+                }
+            }
+
+            .percentage {
+                height: 2rem;
+                width: 15rem;
+                background-color: lightgray;
+                border-radius: .3rem;
+                color: $textWhite;
+                position: relative;
+                
+                 span {
+                     position: absolute;
+                     width: 100%;
+                     height: 100%;
+                     top: 0;
+                     left: 0;
+                     bottom: 0;
+                     z-index: 10;
+                     
+                     display: flex;
+                    align-items: center;
+                    justify-content: center;
+                     
+                 }
+
+                div {
+
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    border-radius: .3rem;
+                    
+                }
+            }
+            
+        }
     }
 
-    &:hover header {
-        display: none;
-    }
-
-    &:hover .overlay{
-
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        height: 0;
-
-        background-color: red;
-
+    footer {
+        background-color: rgb(241,241,241);
+        text-align: center;
+        font-size: .8rem;
+        margin-top: 1rem;
+        padding: 3rem 0;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
     }
 
     
 }
-
- 
-
