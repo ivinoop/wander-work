@@ -1,8 +1,7 @@
 
 let cardContainer = document.createElement("div");
 cardContainer.classList.add("card-container", "container");
-let overlay = document.createElement("div");
-overlay.classList.add("overlay");
+let searchBar = document.querySelector(".search");
 let perfect =  `rgb(98,223,116)`;
 let moderate = `rgb(255,202,61)`;
 let expensive = `rgb(255,202,61)`;
@@ -303,8 +302,9 @@ let data = [
 
 
 
-function createCardUI() {
-
+function createCardUI(data) {
+  console.log(data,"inside");
+  cardContainer.innerHTML = "";
   data.forEach((elm, i) => {
     let card = document.createElement("div");
     card.classList.add("card");
@@ -396,7 +396,7 @@ function createCardUI() {
 
 
 function createPopUpUI(e, index) {
-  console.log("hai");
+  
   let popUpContainer = document.createElement("div");
   popUpContainer.classList.add("popUpContainer");
   let popUpHeader = document.createElement("header");
@@ -671,6 +671,12 @@ function createBackground(str) {
 
 }
 
+searchBar.addEventListener("input", searchCards);
 
+function searchCards(e) {
+  
+  let searchCard = data.filter((elm) => elm.city.toUpperCase().includes(e.target.value) || elm.city.toLowerCase().includes(e.target.value));
+  createCardUI(searchCard);
+}
 
-createCardUI();
+createCardUI(data);

@@ -14,7 +14,7 @@
     
     background-size: cover;
     border-radius: .5rem;
-     padding: .5rem .8rem;
+    padding: .5rem .8rem;
     color:white;
     position: relative;
     
@@ -31,7 +31,7 @@
         font-size: .7rem;
         font-weight: 500;
         color: black;
-        
+
         &:hover {
             background-color: $btnColor;
             color: $textWhite;
