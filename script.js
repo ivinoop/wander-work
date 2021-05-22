@@ -1,8 +1,6 @@
 
-let container = document.createElement("div");
-container.classList.add("container");
-let overlay = document.createElement("div");
-overlay.classList.add("overlay");
+let cardContainer = document.createElement("div");
+cardContainer.classList.add("card-container", "container");
 
 let data = [
 
@@ -273,13 +271,13 @@ function createCardUI() {
 
       card.append(cardHeader, placeDetails, cardFooter);
       // card.append(cardContainer);
-      container.append(card);
+      cardContainer.append(card);
   }); 
 
 }
 
 
-document.body.append(container);
+document.body.append(cardContainer);
 
 
 // createHoverUI();

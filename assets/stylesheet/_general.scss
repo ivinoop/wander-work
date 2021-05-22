@@ -1,0 +1,96 @@
+// Custom Styles
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+// Container
+
+
+.container {
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+
+// Flex
+
+.flex {
+    display: flex;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-45 {
+    flex: 0 1 45%;
+}
+
+.flex-30 {
+    flex: 0 1 30%;
+}
+
+.flex-100 {
+    flex: 0 1 100%;
+}
+
+.flex-20 {
+    flex: 0 1 20%;
+}
+
+.flex-60 {
+    flex: 0 1 60%;
+}
+
+// General Styles
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    align-items: center;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.widthFull {
+    width: 100%;
+}
+
+.font0 {
+    font-size: 0;
+}
+
