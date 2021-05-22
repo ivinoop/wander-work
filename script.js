@@ -381,11 +381,7 @@ function createCardUI() {
       cardFooter.append(climate, expense);
 
       
-      card.addEventListener("mouseover", (event) => {
-        let hover = event.target;
-        createHoverUI(hover, i);
-      });
-
+      
       card.addEventListener("click", (event) => {
         let parent = event.target;
         createPopUpUI(parent, i);
@@ -594,6 +590,7 @@ function createPopUpUI(e, index) {
   dataContainer.append(dataHeader, dataBody);
 
   popUpContainer.append(popUpHeader, dataContainer, popUpFooter);
+  
   document.body.append(popUpContainer);
 
 
@@ -673,6 +670,7 @@ function createBackground(str) {
   
 
 }
+
 
 
 createCardUI();
