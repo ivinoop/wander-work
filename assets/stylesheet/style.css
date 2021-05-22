@@ -284,4 +284,253 @@ a {
   height: 0;
   background-color: red;
 }
+
+.jobs-body {
+  background-color: #f9f9f9;
+  padding: 5rem 0;
+}
+
+.jobs-h2, .jobs-li, .jobs-banner {
+  text-align: center;
+}
+
+.jobs-h2 {
+  font-size: 3.5rem;
+  color: #FE4641;
+  font-weight: 700;
+}
+
+.jobs-li {
+  margin: 0 0.8rem;
+}
+
+.jobs-li a {
+  text-transform: uppercase;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.jobs-banner {
+  margin-top: 2rem;
+}
+
+.jobs-banner .jobs-banner-heading {
+  padding: 1.4rem;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: 0.4rem;
+  max-width: 1040px;
+}
+
+.jobs-banner .jobs-banner-heading a {
+  color: #0F1116;
+  font-weight: 700;
+}
+
+.jobs-banner .jobs-banner-heading a span {
+  text-decoration: underline;
+}
+
+.jobs-banner .jobs-banner-heading .jobs-btn {
+  padding: 0.7rem;
+  background-color: #FE4641;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 0.6rem;
+  margin-left: 0.4rem;
+}
+
+.jobs-partners-text {
+  margin-right: 1rem;
+  font-size: 0.6rem;
+  color: gray;
+}
+
+.partners-logos img {
+  margin-top: 2rem;
+  width: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(80);
+          filter: grayscale(80);
+}
+
+.jobs-listing {
+  margin-top: 2rem;
+}
+
+.jobs-listing .jobs-listing-heading-one {
+  padding: 1.4rem;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: 0.4rem;
+  max-width: 1040px;
+  background-color: #c9c8c8;
+}
+
+.jobs-listing .jobs-listing-heading-one a {
+  color: #0F1116;
+  font-weight: 700;
+}
+
+.jobs-listing .jobs-listing-heading-one a img {
+  width: 10%;
+}
+
+.jobs-listing .jobs-listing-heading-one .jobs-listing-btn {
+  padding: 0.7rem 1.8rem;
+  background-color: #5BC6C6;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 0.6rem;
+  margin-left: 0.4rem;
+}
+
+.jobs-listing .jobs-listing-heading-one .jobs-listing-content h4, .jobs-listing .jobs-listing-heading-one .jobs-listing-content p {
+  color: #0F1116;
+  text-align: left;
+}
+
+.jobs-listing .jobs-listing-heading-one .jobs-listing-content h4 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.jobs-listing .jobs-listing-heading-one .jobs-listing-content p {
+  font-weight: 400;
+}
+
+.jobs-listing .jobs-listing-heading-two {
+  padding: 1.4rem;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: 0.4rem;
+  max-width: 1040px;
+  background-color: #e2d5cf;
+}
+
+.jobs-listing .jobs-listing-heading-two a {
+  color: #0F1116;
+  font-weight: 700;
+}
+
+.jobs-listing .jobs-listing-heading-two a img {
+  width: 10%;
+}
+
+.jobs-listing .jobs-listing-heading-two .jobs-listing-btn {
+  padding: 0.7rem 1.8rem;
+  background-color: #F26626;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 0.6rem;
+  margin-left: 0.4rem;
+}
+
+.jobs-listing .jobs-listing-heading-two .jobs-listing-content h4, .jobs-listing .jobs-listing-heading-two .jobs-listing-content p {
+  color: #0F1116;
+  text-align: left;
+}
+
+.jobs-listing .jobs-listing-heading-two .jobs-listing-content h4 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.jobs-listing .jobs-listing-heading-two .jobs-listing-content p {
+  font-weight: 400;
+}
+
+.jobs-listing .jobs-listing-heading-three {
+  padding: 1.4rem;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: 0.4rem;
+  max-width: 1040px;
+  background-color: #79DBF2;
+}
+
+.jobs-listing .jobs-listing-heading-three a {
+  color: #0F1116;
+  font-weight: 700;
+}
+
+.jobs-listing .jobs-listing-heading-three a img {
+  width: 10%;
+}
+
+.jobs-listing .jobs-listing-heading-three .jobs-listing-btn {
+  padding: 0.7rem 1.8rem;
+  background-color: black;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 0.6rem;
+  margin-left: 0.4rem;
+}
+
+.jobs-listing .jobs-listing-heading-three .jobs-listing-content h4, .jobs-listing .jobs-listing-heading-three .jobs-listing-content p {
+  color: #0F1116;
+  text-align: left;
+}
+
+.jobs-listing .jobs-listing-heading-three .jobs-listing-content h4 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.jobs-listing .jobs-listing-heading-three .jobs-listing-content p {
+  font-weight: 400;
+}
+
+.jobs-listing .jobs-listing-heading-four {
+  padding: 1.4rem;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: 0.4rem;
+  max-width: 1040px;
+  background-color: #fff;
+}
+
+.jobs-listing .jobs-listing-heading-four a {
+  color: #0F1116;
+  font-weight: 700;
+}
+
+.jobs-listing .jobs-listing-heading-four a img {
+  width: 10%;
+}
+
+.jobs-listing .jobs-listing-heading-four .jobs-listing-btn {
+  padding: 0.7rem 1.8rem;
+  background-color: #5E8E3D;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 0.6rem;
+  margin-left: 0.4rem;
+}
+
+.jobs-listing .jobs-listing-heading-four .jobs-listing-content h4, .jobs-listing .jobs-listing-heading-four .jobs-listing-content p {
+  color: #0F1116;
+  text-align: left;
+}
+
+.jobs-listing .jobs-listing-heading-four .jobs-listing-content h4 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.jobs-listing .jobs-listing-heading-four .jobs-listing-content p {
+  font-weight: 400;
+}
 /*# sourceMappingURL=style.css.map */
