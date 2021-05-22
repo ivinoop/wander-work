@@ -151,47 +151,80 @@ let data = [
 ];
 
 
-let hoverData = [
-   {
-     overallRating: "80",
-     cost: "70",
-     internet: "85",
-     fun: "90",
-     safety: "89"
 
 
-   }
-]
+let overlayData = [
 
-/* <div class="overlay">
-    <div class="flex jcb">
-      <label for="overall"><span>⭐</span>Overall</label>
-      <progress id="overall" value="80" max="100">80%</progress>
-    </div>
-    <div class="flex jcb">
-      <label for="cost"><span>💸</span>Cost</label>
-      <progress id="cost" value="85" max="100">80%</progress>
-    </div>
-    <div class="flex jcb">
-      <label for="internet"><span>📡</span>Overall</label>
-      <progress id="internet" value="70" max="100">80%</progress>
-    </div>
-    <div class="flex jcb">
-      <label for="fun"><span>😆</span>Fun</label>
-      <progress id="fun" value="80" max="100">80%</progress>
-    </div>
-    <div class="flex jcb">
-      <label for="safety"><span>👮‍♀️</span>safety</label>
-      <progress id="safety" value="80" max="100">80%</progress>
-    </div>
-  </div> */
+  {
+    overallRating: 80,
+    cost: 90,
+    internet: 85,
+    fun: 95,
+    sefety: 80
+  },
 
-  
+  {
+    overallRating: 80,
+    cost: 90,
+    internet: 85,
+    fun: 95,
+    sefety: 80
+  },
 
+  {
+    overallRating: 80,
+    cost: 90,
+    internet: 85,
+    fun: 95,
+    sefety: 80
+  },
+
+  {
+    overallRating: 80,
+    cost: 90,
+    internet: 85,
+    fun: 95,
+    sefety: 80
+  },
+
+  {
+    overallRating: 80,
+    cost: 90,
+    internet: 85,
+    fun: 95,
+    sefety: 80
+  },
+
+  {
+    overallRating: 80,
+    cost: 90,
+    internet: 85,
+    fun: 95,
+    sefety: 80
+  },
+
+  {
+    overallRating: 80,
+    cost: 90,
+    internet: 85,
+    fun: 95,
+    sefety: 80
+  },
+
+  {
+    overallRating: 80,
+    cost: 90,
+    internet: 85,
+    fun: 95,
+    sefety: 80
+  }
+
+
+];
 
 function createCardUI() {
 
-  data.forEach((elm) => {
+  data.forEach((elm, i) => {
     let card = document.createElement("div");
     card.classList.add("card");
     
@@ -267,7 +300,10 @@ function createCardUI() {
       cardFooter.append(climate, expense);
 
       
-      
+      card.addEventListener("mouseover", (event) => {
+        let hover = event.target;
+        createHoverUI(hover, i);
+      });
 
       card.append(cardHeader, placeDetails, cardFooter);
       // card.append(cardContainer);
@@ -276,7 +312,107 @@ function createCardUI() {
 
 }
 
+/* <div class="overlay">
+    <div class="flex jcb">
+      <label for="overall"><span>⭐</span>Overall</label>
+      <progress id="overall" value="80" max="100">80%</progress>
+    </div>
+    <div class="flex jcb">
+      <label for="cost"><span>💸</span>Cost</label>
+      <progress id="cost" value="85" max="100">80%</progress>
+    </div>
+    <div class="flex jcb">
+      <label for="internet"><span>📡</span>Overall</label>
+      <progress id="internet" value="70" max="100">80%</progress>
+    </div>
+    <div class="flex jcb">
+      <label for="fun"><span>😆</span>Fun</label>
+      <progress id="fun" value="80" max="100">80%</progress>
+    </div>
+    <div class="flex jcb">
+      <label for="safety"><span>👮‍♀️</span>safety</label>
+      <progress id="safety" value="80" max="100">80%</progress>
+    </div>
+  </div> */
 
+  
+
+
+
+function createHoverUI(hover,index) {
+
+  // overlay.innerHTML = "";
+
+  
+    
+    let overlay = document.createElement("div");
+    overlay.classList.add("overlay");
+
+    let overallContainer = document.createElement("div");
+    let overallText = document.createElement("label");
+    overallText.innerText = "Overall"
+    let overallImg = document.createElement("span");
+    overallImg.innerText = "⭐";
+    overallText.prepend(overallImg);
+    let overallProgress = document.createElement("progress");
+    overallProgress.value = overlayData[index].overallRating;
+    overallContainer.append(overallText, overallProgress);
+
+    let costContainer = document.createElement("div");
+    let costText = document.createElement("label");
+    costText.innerText = "Cost";
+    let costImg = document.createElement("span");
+    costImg.innerText = "💸";
+    costText.prepend(costImg);
+    let costProgress = document.createElement("progress");
+    costProgress.value = overlayData[index].cost;
+    costContainer.append(costText, costProgress);
+
+    let internetContainer = document.createElement("div");
+    let internetText = document.createElement("label");
+    internetText.innerText = "Internet";
+    let internetImg = document.createElement("span");
+    internetImg.innerText = "📡";
+    internetText.prepend(internetImg);
+    let internetProgress = document.createElement("progress");
+    internetProgress.value = overlayData[index].internet;
+    internetContainer.append(internetText, internetProgress);
+
+    let funContainer = document.createElement("div");
+    let funText = document.createElement("label");
+    funText.innerText = "Fun";
+    let funImg = document.createElement("span");
+    funImg.innerText = "😆";
+    funText.prepend(funImg);
+    let funProgress = document.createElement("progress");
+    funProgress.value = overlayData[index].fun;
+    funContainer.append(funText, funProgress);
+
+    let safeContainer = document.createElement("div");
+    let safeText = document.createElement("label");
+    safeText.innerText = "Safety";
+    let safeImg = document.createElement("span");
+    safeImg.innerText = "👮‍♀️";
+    safeText.prepend(safeImg);
+    let safeProgress = document.createElement("progress");
+    safeProgress.value = overlayData[index].fun;
+    safeContainer.append(safeText, safeProgress);
+    console.log(overlayData[index]);
+    overlay.append(overallContainer, costContainer, internetContainer, funContainer, safeContainer);
+
+    hover.append(overlay);
+    console.log(hover);
+  //  document.body.append(overlay);
+  
+
+  
+}
+
+
+
+function popUpUI() {
+
+}
 document.body.append(cardContainer);
 
 
