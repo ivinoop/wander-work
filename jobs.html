@@ -5,17 +5,187 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/474e96f807.js" crossorigin="anonymous"></script>
     <title>Job Boards</title>
 </head>
 <body class="jobs-body">
-    <!-- Header -->
-    <header class="jobs-header">
 
-    </header>
+    <!-- PAGE HEADER -->
+
+  <header class="page-header">
+    <div class="container nav_bar flex">
+      <label class="bars" for="toggle">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="toggle" />
+
+      <nav class="nav">
+        <div class="nav-menu">
+          <div class="sub-menu-box">
+            <a href="index.html" class="flex logo-wrap">
+              <span class="logo-container"><img src="assets/media/marker-w.png" alt="Logo"></span>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+              <div class="sub-menu">
+                  <ul>
+                    <li>
+                      <a href="#">🌎Join Wander Work</a>
+                    </li>
+                    <li>
+                      <a id="active" href="./index.html"><img src="assets/media/marker-w.png" alt=""> Homepage</a>
+                    </li>
+                    <li>
+                      <a href="#">🌗 Dark mode</a>
+                    </li>
+                    <li>
+                      <a href="#">🏜️ Explore</a>
+                    </li>
+                    <li>
+                      <a href="#">🎫 Members</a>
+                    </li>
+                    <li>
+                      <a href="#">💥 Fastest growing</a>
+                    </li>
+                    <li>
+                      <a href="jobs.html">🛰️ Remote Jobs</a>
+                    </li>
+                    <li>
+                      <a href="#">🗺️ Neighborhoods</a>
+                    </li>
+                    <li>
+                      <a href="#">📍 Remote Work Visas</a>
+                    </li>
+                  </ul>  
+                  
+                  <ul>
+                    <li>
+                      <a id="active" href="./index.html">👋 Log in</a>
+                    </li>
+                    <li>
+                      <a href="#">⚙️ Settings</a>
+                    </li>
+                    <li>
+                      <a href="#">❤️ Your favorites</a>
+                    </li>
+                    <li>
+                      <a href="#">🍸 Meetups</a>
+                    </li>
+                    <li>
+                      <a href="#">💬 Chat</a>
+                    </li>
+                    <li>
+                      <a href="#">👦 About</a>
+                    </li>
+                    <li>
+                      <a href="#">🌤️ Climate finder</a>
+                    </li>
+                    <li>
+                      <a href="#">🔌 Fastest internet</a>
+                    </li>
+                    <li>
+                      <a href="#">🌴 Coworkations</a>
+                    </li>
+                  </ul>                
+              </div>
+          </div>
+        </div>
+      </nav>
+
+      <div>
+        <input type="search" placeholder="search" class="search-container">
+      </div>
+
+      <nav class="nav">
+        <div class="nav-menu">
+          <div class="sub-menu-box">
+              <a href="#" class="flex dots-container">
+                <span class="ellipsis"><i class="fas fa-ellipsis-h"></i></span>
+              </a>
+            </a>
+            <div class="sub-menu sub-menu-2">
+              <ul>
+                <li>
+                  <a href="#">🌎 Join WanderWork</a>
+                </li>
+                <li>
+                  <a id="active" href="./index.html"><img src="assets/media/marker-w.png" alt=""> Homepage</a>
+                </li>
+                <li>
+                  <a href="#">🌗 Dark mode</a>
+                </li>
+                <li>
+                  <a href="#">🏜️ Explore</a>
+                </li>
+                <li>
+                  <a href="#">🎫 Members</a>
+                </li>
+                <li>
+                  <a href="#">💥 Fastest growing</a>
+                </li>
+                <li>
+                  <a href="jobs.html">🛰️ Remote Jobs</a>
+                </li>
+                <li>
+                  <a href="#">🗺️ Neighborhoods</a>
+                </li>
+                <li>
+                  <a href="#">📍 Remote Work Visas</a>
+                </li>
+              </ul>  
+              
+              <ul>
+                <li>
+                  <a id="active" href="./index.html">👋  Log in</a>
+                </li>
+                <li>
+                  <a href="#">⚙️ Settings</a>
+                </li>
+                <li>
+                  <a href="#">❤️ Your favorites</a>
+                </li>
+                <li>
+                  <a href="#">🍸 Meetups</a>
+                </li>
+                <li>
+                  <a href="#">💬 Chat</a>
+                </li>
+                <li>
+                  <a href="#">👦 About</a>
+                </li>
+                <li>
+                  <a href="#">🌤️ Climate finder</a>
+                </li>
+                <li>
+                  <a href="#">🔌 Fastest internet</a>
+                </li>
+                <li>
+                  <a href="#">🌴 Coworkations</a>
+                </li>
+              </ul>                
+          </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="title-container">
+        <h1>
+          🌍 WanderWork
+        </h1>
+        <p>--> Work From Where You Want</p>
+        <p>--> No Boundries!</p>
+        <p>--> Explore The Globe</p>
+      </div>
+
+    </section>
 
     <!-- Job Categories -->
     <section class = "jobs-categories">
-        <div class="container">
+        <div class="jobs-container">
             <h2 class="jobs-h2">Wander To Your Perfect Work!</h2>
             <ul class="categories-list flex jcc aic">
                 <li class="jobs-li">
@@ -64,7 +234,7 @@
 
     <!-- Banner -->
     <section class="jobs-banner">
-        <div class="container jobs-banner-heading">
+        <div class="jobs-container jobs-banner-heading">
             <a href = "#" class="jobs-banner-content">
                 <i class="jobs-icon">
                     👉
@@ -79,7 +249,7 @@
 
     <!-- Jobs Partners -->
     <section class="jobs-parters">
-        <div class="container flex jcc aic">
+        <div class="jobs-container flex jcc aic">
             <span class="jobs-partners-text">
                 trusted by
             </span>
@@ -105,7 +275,7 @@
 
     <!-- Jobs Listing -->
     <section class="jobs-listing">
-        <div class="container jobs-listing-heading-one">
+        <div class="jobs-container jobs-listing-heading-one">
             <div class="jobs-listing-content flex jcb aic">
                 <div>
                     <img src="/assets/media/partners-img/amazon.png" alt="">
@@ -123,7 +293,7 @@
         </div>
     </section>
     <section class="jobs-listing">
-      <div class="container jobs-listing-heading-two">
+      <div class="jobs-container jobs-listing-heading-two">
           <div class="jobs-listing-content flex jcb aic">
               <div>
                   <img src="/assets/media/partners-img/ycombinator.png" alt="">
@@ -141,7 +311,7 @@
       </div>
   </section>
   <section class="jobs-listing">
-    <div class="container jobs-listing-heading-three">
+    <div class="jobs-container jobs-listing-heading-three">
         <div class="jobs-listing-content flex jcb aic">
             <div>
                 <img src="/assets/media/partners-img/github.png" alt="">
@@ -159,7 +329,7 @@
     </div>
 </section>
 <section class="jobs-listing">
-  <div class="container jobs-listing-heading-four">
+  <div class="jobs-container jobs-listing-heading-four">
       <div class="jobs-listing-content flex jcb aic">
           <div>
               <img src="/assets/media/partners-img/shopify.png" alt="">
@@ -176,5 +346,6 @@
       </div>
   </div>
 </section>
+  <script src="hero.js"></script>
   </body>
 </html>
