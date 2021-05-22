@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jcb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  max-width: 300px;
+  height: 300px;
+  background-size: cover;
+  border-radius: .5rem;
+  padding: 1rem;
+  color: white;
+  position: relative;
+}
+
+.card .popularity {
+  display: inline-block;
+  background-color: #fff;
+  padding: .3rem;
+  border-radius: .3rem;
+  font-size: .7rem;
+  font-weight: 500;
+  color: black;
+}
+
+.card .connectivity i {
+  margin-right: .3rem;
+}
+
+.card .connectivity .data-speed .speed {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: .2rem;
+}
+
+.card .connectivity .data-speed small {
+  font-size: .8rem;
+}
+
+.card .place-details {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.card .place-details h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.card .footer .climate i {
+  margin-right: .4rem;
+}
+
+.card .footer .climate .temperature small {
+  font-size: .7rem;
+}
+
+.card .footer .climate .temperature span {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.card .footer .climate .emoji span {
+  margin: 0 .3rem;
+}
+
+.card .footer .climate .aqi small {
+  font-size: .7rem;
+}
+
+.card .footer .expense h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card .footer .expense h5::before {
+  content: "$";
+}
+
+.card .footer .expense h5::after {
+  content: "/ mo";
+  font-size: 1rem;
+  margin-left: .3rem;
+}
+
+.card:hover .footer {
+  display: none;
+}
+
+.card:hover .place-details {
+  display: none;
+}
+
+.card:hover header {
+  display: none;
+}
+
+.overlay {
+  padding: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
