@@ -1,7 +1,7 @@
 
 let cardContainer = document.createElement("div");
 cardContainer.classList.add("card-container", "container");
-let searchBar = document.querySelector(".search");
+let searchBar = document.querySelector(".search-container");
 let perfect =  `rgb(98,223,116)`;
 let moderate = `rgb(255,202,61)`;
 let expensive = `rgb(255,202,61)`;
